@@ -21,7 +21,6 @@ body{
     grid-area: main;
 }
 .footer{
-    background-color:burlywood;
     padding: 10px;
     grid-area: footer;
 }
