@@ -1,0 +1,67 @@
+.serach-container {
+  background-color: #e12727;
+  width: 80%;
+  margin: auto;
+}
+.search-box {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  width: 50%;
+  margin: auto;
+  border: 1px solid rgb(68, 68, 68);
+  position: absolute;
+  left: 24rem;
+  top: 6rem;
+}
+.search-btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  right: 25rem;
+  top: 103px;
+  background-color: rgb(83, 134, 220);
+}
+.header {
+  display: flex;
+}
+.nav-link {
+  position: absolute;
+  right: 7rem;
+}
+.nav-items {
+  display: flex;
+}
+.item {
+  list-style: none;
+  padding: 1rem;
+  font-weight: 500;
+}
+.item:hover {
+  color: darkgrey;
+}
+.cart-icon {
+  font-size: 1.5rem;
+}
+.cart-count {
+  background-color: #3a7cef;
+  font-weight: bold;
+  font-size: 0.6rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 12%;
+  position: absolute;
+  top: 4px;
+  right: 0px;
+  color: white;
+}
+.logo-container {
+  display: flex;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0rem 1rem 0rem;
+}
+.logo-icon {
+  font-size: 2rem;
+  margin: 1rem 0.5rem 1rem 3rem;
+}

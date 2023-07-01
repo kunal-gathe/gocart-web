@@ -1,23 +1,32 @@
 import React from 'react'
-import { Grid, GridItem, Show } from '@chakra-ui/react'
-import Navbar from './componets/Navbar'
-
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './componets/Home/Home.js'
+import About from './componets/About/About.js'
+import Products from './componets/Products/Products.js'
+import Contact from './componets/Contact/Contact.js'
+import SingleProduct from './componets/SingleProduct/SingleProduct.js'
+import Cart from './componets/Cart/Cart.js'
+import Error from './componets/ErrorPage/ErrorPage.js'
+import Header from './componets/Header/Header.js'
+import './App.css'
 function App() {
-  return (
-	<div>
-	  <Grid templateAreas={{
-		base:` "nav" "main"`,
-		lg: `"nav nav" "aside main" `
-		
-	  }}>
-		<GridItem area='nav'><Navbar /></GridItem>
-		<Show above='lg'>  
-		<GridItem area='aside'>aside</GridItem>
-		</Show>
-		<GridItem  area='main'>main</GridItem>
-	  </Grid>
-	</div>
-  )
+	
+	return (
+		<div >
+			<BrowserRouter>
+			<Header />
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/about' element={<About />} />
+					<Route path='/products' element={<Products />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/singleproduct/:id' element={<SingleProduct />} />
+					<Route path='/cart' element={<Cart />} />
+					<Route path='/error' element={<Error />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+	)
 }
 
 export default App
