@@ -30,6 +30,7 @@
 }
 .nav-items {
   display: flex;
+  margin-top: 0.5rem;
 }
 .item {
   list-style: none;
@@ -49,8 +50,8 @@
   padding: 0.1rem 0.2rem;
   border-radius: 12%;
   position: absolute;
-  top: 4px;
-  right: 0px;
+  top: 10px;
+  right: 3px;
   color: white;
 }
 .logo-container {

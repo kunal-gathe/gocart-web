@@ -8,6 +8,7 @@ import SingleProduct from './componets/SingleProduct/SingleProduct.js'
 import Cart from './componets/Cart/Cart.js'
 import Error from './componets/ErrorPage/ErrorPage.js'
 import Header from './componets/Header/Header.js'
+import Footer from './componets/Footer/Footer.js'
 import './App.css'
 function App() {
 	
@@ -24,6 +25,7 @@ function App() {
 					<Route path='/cart' element={<Cart />} />
 					<Route path='/error' element={<Error />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</div>
 	)

@@ -1,0 +1,41 @@
+.footer{
+    background-color: #091b38;
+    color: white;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem 15rem;
+}
+.store-info{
+    width: 77%;
+    margin-right: 15rem;
+}
+.footer-logo{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.store-description{
+    font-size: 1rem;
+}
+.SubScribe{
+    margin-right: 4rem;
+}
+.subs-heading{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.email-input{
+    background-color: #fff;
+    margin-bottom: 0.5rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+}
+
+.footer-social{
+    width: 50%;
+}
+.footer-s-icon{
+    width: 10%;
+    border-radius: 10px;
+}
