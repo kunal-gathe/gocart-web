@@ -6,7 +6,6 @@ function ColorMode() {
   return (
     <HStack >
         <Switch  isDisabled = {ColorMode === 'dark'} onChange={toggleColorMode} />
-      
     </HStack>
   )
 }

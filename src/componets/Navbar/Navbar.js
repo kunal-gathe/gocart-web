@@ -1,20 +1,22 @@
 import React from 'react'
-// import ColorMode from '../ColorMode'
+import ColorMode from '../ColorMode'
 import '../Navbar/Navbar.css'
 import { NavLink } from 'react-router-dom'
 import { FiShoppingCart, FiShoppingBag } from "react-icons/fi";
 import { useFilterContex } from '../../context/filterContex';
+import { useCartContext } from '../../context/cartContex';
 
 function Navbar() {
+  const {cart} = useCartContext();
   const {
     filters:{text} ,
      getsearchvalue
     } = useFilterContex();
   return (
     <div className='header'>
-      {/* <ColorMode   /> */}
+      <ColorMode   />
       <div className='logo-container'>
-        <FiShoppingBag className='logo-icon' />
+        <FiShoppingBag className='logo-icon' / >
         <h1 className='logo'>Gocart</h1>
       </div>
 
@@ -43,7 +45,7 @@ function Navbar() {
           <li className="item">
             <NavLink to='/cart'>
               <FiShoppingCart className='cart-icon' />
-              <span className='cart-count'>10</span>
+              <span className='cart-count'>{cart.length}</span>
             </NavLink>
           </li>
         </ul>

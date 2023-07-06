@@ -6,6 +6,7 @@ import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import theme from './theme';
 import { AppProvider } from './context/productContext';
 import { FilterContextProvider } from './context/filterContex';
+import { CartProvider } from './context/cartContex';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,7 +15,9 @@ root.render(
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <AppProvider>
         <FilterContextProvider>
+        <CartProvider>
           <App />
+        </CartProvider>
         </FilterContextProvider>
       </AppProvider>
     </ChakraProvider>

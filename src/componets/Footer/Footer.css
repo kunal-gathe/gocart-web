@@ -1,6 +1,11 @@
 .footer{
     background-color: #091b38;
     color: white;
+    position: relative;
+    bottom: -5rem;
+    width: 100%;  /* Height of the footer */
+    background: rgb(9, 68, 98);
+    color: rgb(255, 255, 255);
 }
 .footer-container{
     display: grid;
@@ -10,6 +15,7 @@
 .store-info{
     width: 77%;
     margin-right: 15rem;
+    color: rgb(255, 255, 255);
 }
 .footer-logo{
     font-size: 1rem;

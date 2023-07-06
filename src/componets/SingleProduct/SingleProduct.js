@@ -2,14 +2,17 @@ import React, { useEffect } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 import { useProductContext } from '../../context/productContext';
 import '../SingleProduct/Singleproduct.css'
+import { useCartContext } from '../../context/cartContex';
 const Api = "https://fakestoreapi.com/products/"
 
+
 function SingleProduct() {
-  const {setSingleProduct,getSingleProduct} = useProductContext();
+  const {setSingleProduct,getSingleProduct,} = useProductContext();
+  const {addToCart} = useCartContext()
   const {id} = useParams();
 
   const {
-    // id: alis,
+    id: alis,
     title,
     price,
     description,
@@ -34,7 +37,9 @@ function SingleProduct() {
           <hr className="new4" />
           <p> Category: {category}</p>
           <p>Available</p>
-          <NavLink to='/cart'>
+          <NavLink to='/cart'
+          onClick={()=> addToCart(alis,title,image,price,setSingleProduct)}
+          >
           <button className='s-btn'>Add To cart</button>
           </NavLink>
       </div>
