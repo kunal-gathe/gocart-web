@@ -39,7 +39,7 @@ function Products() {
 
           <div className='filter'>
             <div className='filter-container'>
-              <select name="cars" id="filter-box" onClick={getFiltervalue}>
+              <select name="products" id="filter-box" onClick={getFiltervalue}>
                 <option value="filter">Filter</option>
                 <option value="Low Price">Low Price</option>
                 <option value="High Price">High Prace</option>
@@ -55,10 +55,8 @@ function Products() {
                     <NavLink to={`/singleproduct/:${item.id}`} >
                       <p className='product-rating'>{item.rating.rate}</p>
                       <img src={item.image} alt={item.name} className='product-img' />
-                      <div className='product-flex-1'>
-                        <p className='card-title-1'>{item.title.slice(0, 19)}</p>
+                        <p className='card-title-1'>{item.title.slice(0, 15)}</p>
                         <p className='card-price-1'>${item.price}</p>
-                      </div>
                     </NavLink>
                   </div>)
               })}

@@ -9,12 +9,12 @@ function Footer() {
         <div className='footer-container'>
             <div className='store-info'>
                 <h3 className='footer-logo'>Gocart</h3>
-                <p className='store-description'>Welcome to our online store, where you'll find a wide selection of products.</p>
+                {/* <p className='store-description'>Welcome to our online store, where you'll find a wide selection of products.</p> */}
             </div>
             <div className='SubScribe'>
                 <h4 className='subs-heading'>SubScribe to get Updates!</h4>
                 <input type='text' placeholder='Email' className='email-input' />
-                <Button size='sm' colorScheme='blue' className='f-btn'>SubScribe</Button>
+                <button size='sm' className='f-btn'>SubScribe</button>
             </div>
             <div className='footer-social'>
                 <HStack>
@@ -28,10 +28,10 @@ function Footer() {
                         <FaInstagram />
                     </Button>
                 </HStack>
-            </div>
             <div className='footer-call'>
                 <p className='call-des'>Call us</p>
                 <p className='ph'>+91 1234567890</p>
+            </div>
             </div>
         </div>
         </div>

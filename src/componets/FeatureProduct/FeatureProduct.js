@@ -19,11 +19,9 @@ function FeatureProduct() {
                         return (
                             <div key={item.id} className='featured-card-container'>
                                 <NavLink to={`/singleproduct/:${item.id}`} >
-                                    <img src={item.image} alt={item.name} className='product-img' />
-                                    <div className='card-flex'>
+                                    <img src={item.image} alt={item.name} className='product-img-1' />
                                         <p className='card-title-1'>{item.title.slice(0, 19)}</p>
                                         <p className='card-price-1'>${item.price}</p>
-                                    </div>
                                 </NavLink>
                             </div>)
                     })}
